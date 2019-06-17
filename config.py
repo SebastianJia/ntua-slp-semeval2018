@@ -5,7 +5,7 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Running on:{}".format(DEVICE))
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-
+print(BASE_PATH)
 TRAINED_PATH = os.path.join(BASE_PATH, "trained")
 
 EXPS_PATH = os.path.join(BASE_PATH, "out/experiments")
@@ -13,7 +13,7 @@ EXPS_PATH = os.path.join(BASE_PATH, "out/experiments")
 ATT_PATH = os.path.join(BASE_PATH, "out/attentions")
 
 DATA_DIR = os.path.join(BASE_PATH, 'datasets')
-
+print(DATA_DIR)
 
 class TASK1(object):
     E_C = {

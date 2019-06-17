@@ -49,7 +49,7 @@ def train_ei_reg(emotion, pretrained=None, finetune=True, unfreeze=0):
         "dev": (X_dev, y_dev),
         "gold": (X_test, y_test),
     }
-
+    print(datasets)
     name = model_config["name"] + "_" + emotion
     trainer = define_trainer("reg", config=model_config, name=name,
                              datasets=datasets,
